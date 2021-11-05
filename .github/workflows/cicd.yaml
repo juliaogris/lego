@@ -13,4 +13,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        SLACK_TEXT: ":steam_locomotive: new commit in <https://github.com/juliaogris/lego|juliaogris/lego> ${{ github.sha }}"
+        SLACK_TEXT: ":steam_locomotive: new commit in <https://github.com/juliaogris/lego|juliaogris/lego> \n ${{ github.event.head_commit.message }} \n ${{ github.sha }}"
